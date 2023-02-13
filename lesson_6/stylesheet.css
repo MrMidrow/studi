@@ -1,9 +1,54 @@
-*{
-	margin: 0;
-	padding: 0;
+
+#menu{
+  display: flex;
 }
 
-.textstyle{
-	text-transform: uppercase;
-	text-decoration: ;
+#menu li{
+  text-align: center;
+  width: 200px;
+  list-style: none;
+  background: #ccc;
+  position: relative;
+}
+
+#menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+#menu a:hover{
+  background: #444;
+}
+
+#menu > li:hover{
+  background: #444;
+  cursor: pointer;
+}
+
+/*второй вариант наведения на вкладки*/
+
+/*#menu li:hover{
+  background: #444;
+  cursor: pointer;
+}*/
+
+#menu ul{
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  padding: 0;
+}
+
+#menu li:hover > ul{
+  display: block;
+}
+
+#menu ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
 }
