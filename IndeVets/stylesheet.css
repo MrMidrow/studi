@@ -1,0 +1,427 @@
+/*Подключаем шрифты*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&family=Roboto:wght@100;400;700&display=swap');
+
+
+/*Общие настройки стилей*/
+
+*{
+	margin: 0;
+	padding: 0;
+	max-width: 1440px;
+	box-sizing: border-box;
+	margin: 0px auto;
+}
+
+body{
+	background: #E5E5E5;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Roboto';
+}
+
+p{
+	font-family: 'Nunito Sans';
+}
+
+a{
+	text-decoration: none;
+	font-family: "Nunito Sans";
+}
+
+ul{
+	list-style: none;
+}
+
+/*общие стили header*/
+
+header{
+	max-width: 1440px;
+	height: 900px;
+	padding-top: 23px;
+	background: #284854;
+	flex-direction: column;
+}
+
+/*применяем стили к навигационной панели*/
+
+nav {
+	display: flex;
+	max-width: 1270px;
+	border-radius: 90px;
+	margin: 0 auto;
+	padding: 22px 35px;
+	justify-content: space-between;
+	background: #60C1BD;
+}
+
+nav ul > li{
+	display: inline-block;
+	margin: 5px 30px 0px 60px;
+}
+
+nav ul li > a{
+	font-size: 18px;
+	color: #284854;
+	text-align: center;
+}
+
+nav ul li > a:hover{
+	color: #FFFFFF;
+	transition: all 0.3s ease;
+}
+
+nav > h2{
+	color: #fff;
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 30px;
+}
+
+/*стиль кнопки логина*/
+
+.login{
+	display: block;
+	color: #fff;
+	border: 1px solid #ffffff;
+	font-size: 14px;
+	font-family: "Nunito Sans";
+	font-weight: 400;
+	background-color: transparent;
+	padding: 5px 25px;
+}
+
+.login:hover{
+	color: #284854;
+	border: 1px solid #284854;
+}
+
+
+/*стили основного контента header*/
+
+.section__header{
+	margin: 160px 150px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.descript__section_header > h1{
+	display: block;
+	width: 712px;
+	margin: 0px 0px 25px 0px;
+	color: #8BC441;
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 85px;
+	line-height: 102px;
+}
+
+.descript__section_header > p{
+	margin: 0;
+	display: block;
+	width: 542px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #ffffff;
+}
+
+
+
+/*Блок визиток*/
+/*стиль визиток*/
+
+.card{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: -70px;
+}
+
+.item{
+	display: flex;
+	width: 466px;
+	background: #F4F6F0;
+	border-radius: 4px;
+}
+
+
+.card_image{
+	padding: 25px 35px 25px 25px;
+}
+
+.card_image > img{
+	display: block;
+	width: 100px;
+	height: 100px;
+}
+
+.card__descrip > h3{
+	text-align: left;
+	color: #8BC441;
+	margin-top: 30px;
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 37px;
+}
+
+.card__descrip > a{
+	text-align: left;
+	display: block;
+	width: 185px;
+	color: #60C1BD;
+	font-size: 20px;
+	line-height: 27px;
+	margin: 0;
+}
+
+.card__descrip > a:hover{
+	color: #284584;
+	transition: all 0.3s ease;
+}
+
+/*основная информация сайта*/
+
+main{
+	max-width: 1440px;
+	text-align: center;
+	background: #ffffff;
+}
+
+main > p{
+	font-family: 'Nunito Sans';
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 30px;
+	color: rgba(96, 193, 189, 1);
+	margin: 65px 0px -5px 0px;
+}
+
+main > h2 {
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 64px;
+	color: rgba(40, 72, 84, 1);
+	margin: 0px 0px 110px 0px;
+}
+
+main > .main{
+	display: flex;
+	flex-direction: column;
+}
+
+.step{
+	display: flex;
+	justify-content: center;
+
+	padding: 0px 210px;
+	margin: 25px 0px;
+}
+
+.descript_step > h4{
+	text-align: left;
+	display: block;
+	margin: 15px 0px 5px 0px;
+	color: #8BC441;
+	font-size: 40px;
+	line-height: 47px;
+}
+
+.descript_step > p {
+	text-align: left;
+	color: #284854;
+	font-size: 16px;
+	line-height: 29px;
+}
+
+.descript_step > p:first-child{
+	color: #798B56;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.descript_step p > u{
+	text-decoration-color: rgba(96, 193, 189, 1);
+}
+
+/*         /V)_,(0_0),_(V)         */
+
+.step_one > .descript_step{
+	padding: 50px 70px 0px 160px;
+}
+
+
+.step_two{
+	flex-direction: row-reverse;
+}
+
+.step_two > .descript_step{
+	padding: 20px 155px 0px 70px;
+}
+
+.step_three > .descript_step{
+ padding: 20px 90px 0px 160px;
+}
+
+
+/*Our row*/
+
+.our_row{
+	display: flex;
+	justify-content: space-between;
+	background: rgba(244, 246, 240, 1);
+	text-align: left;
+	padding: 110px 195px;
+}
+
+.our_img{
+	width: 450px;
+	height: 383px;
+	padding: 0px 0px 0px 0px;
+}
+
+.our_descript{
+	padding: 0px 0px 0px 55px;
+}
+
+.our_descript > p:first-child{
+	color: rgba(96, 193, 189, 1);
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.our_descript > p{
+	color: #284854;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	margin: 15px 20px;
+}
+
+.our_descript > h4{
+	color: #284854;
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 64px;
+	margin: 15px 20px;
+}
+
+.our_descript > a{
+	display: block;
+	width: 130px;
+	color: #60C1BD;
+	border: 1px solid #60C1BD;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	background-color: transparent;
+	padding: 5px 8px;
+	margin: 50px 0px 50px 120px;
+}
+
+.our_descript > a:hover{
+	background: #60C2BD;
+	color: #fff;
+	transition: all 0.3s ease;
+}
+
+/*зеленый блок*/
+
+.green_row{
+	margin: 10px 0px 0px 0px;
+	padding: 87px;
+	display: flex;
+	background: #8BC441;
+}
+
+.descript_green{
+	text-align: left;
+	color: #FFFFFF;
+}
+
+.descript_green > h4{
+	margin: 0;
+	display: block;
+	width: 516px;
+	font-size: 55px;
+	line-height: 65px;
+}
+
+.descript_green > a{
+	display: inline-block;
+	margin-top: 50px;
+	color: #FFFFFF;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.descript_green > a:hover{
+	color: #284854;
+	transition: all 0.3s ease;
+}
+
+.indevet{
+	width: 239px;
+}
+.partner{
+	margin: 0px 0px 0px 100px;
+	width: 210px;
+}
+
+/*FOOTER*/
+
+footer{
+	max-width: 1440px;
+	background: #ffffff;
+	display: flex;
+}
+
+.container{
+	margin: 0px;
+}
+
+.first_block {
+	display: flex;
+	margin: 0px;
+	flex-direction: column;
+}
+
+.first__box > ul{
+	display: inline-block;
+	margin: 120px 69px 100px 69px;
+}
+
+.first__box > ul:first-child{
+	margin-left: 210px;
+}
+
+.first__box > ul li {
+	padding: 9px 0px 9px 0px;
+}
+.first__box ul > li:first-child{
+	color: #284854;
+	font-family: 'Nunito Sans';
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: 2px;
+}
+
+.second__box ul > li{
+	padding: 0px 50px 70px 0px;
+	display: inline-block;
+}
+
+
+
+
+.second_container{
+	display: flex;
+	margin: 0px;
+	flex-direction: row;
+}
+

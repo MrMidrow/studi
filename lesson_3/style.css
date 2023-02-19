@@ -1,0 +1,112 @@
+/**{
+	text-align: center;
+	color: green;
+}*/
+
+*{
+	font-family: Arial;
+}
+h1{
+	color: grey;
+}
+#item1, #item2, #item3, #item4, #item5{
+	margin-left: ;
+}
+.exemple{
+	background: #9999;
+}
+
+#item1 {
+	width: 900px;
+	border: 2px solid black;
+}
+.universal{
+	width: 900px;
+	border: 2px solid black;
+}
+
+#item2 {
+	width: 900px;
+	border: 2px solid black;
+}
+
+#item3 {
+	width: 900px;
+	border: 2px solid black;
+}
+
+#item4 {
+	width: 900px;
+	border: 2px solid black;
+}
+
+#item5 {
+	width: 900px;
+	border: 2px solid black;
+}
+
+#name .exemple p{
+	text-align: center;
+	color: green;
+}
+
+#item{
+	text-align: center;
+	color: green;
+}
+
+.item{
+	text-align: center;
+	color: green;
+}
+
+/*p.item{
+	text-align: center;
+	color: green;
+}*/
+
+.textstyle{
+	color: green;
+}
+
+.styletext{
+	text-align: center;
+}
+
+.h1, .h2, .h3{
+	color: blue;
+}
+
+.combo1 p {
+	text-align: center;
+	color:red;
+}
+
+.combo2 > p {
+	color:red;
+}
+
+.combo3 + p{
+	color: red;
+}
+
+.combo4 ~ p{
+	color: red;
+}
+
+a:link{
+	color:black;
+}
+
+a:visited{
+	color:red;
+}
+
+a:hover{
+	color: blue;
+}
+
+a:active{
+	color:green;
+}
+

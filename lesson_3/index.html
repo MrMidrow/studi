@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../lesson_3/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<h1>селекторы <span>CSS</span></h1>
+		<p>селекторы css можно поделить на пять категорий:</p>
+		<nav>
+			<ul>
+				<li><a href="#item1">Простые селекторы</a></li>
+				<li><a href="#item2">Селекторы-комбинаторы</a></li>
+				<li><a href="#item3">Селекторы псевдоклассов</a></li>
+				<li><a href="#item4">Сеелекторы псевдоэлементов</a></li>
+				<li><a href="#item5">Селектор атрибутов</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div id="item1">
+			<h2>Простые селекторы</h4>
+			<p>Выбор элементов на основе 
+				<ul>
+					<li><a href="#name">имени *</a></li>
+					<li><a href="#identificator">идентификатора <span lang="en">"id"</span></a></li>
+					<li><a href="#class">класса <span lang="en">"class"</span></a></li>
+				</ul>
+			</p>
+			<hr>
+			<div id="name">
+				<h3>Выбор по имени *</h3>
+				<p>Селектор элементов выбирает элементы HTML на основе имени элемента</p>
+				<br>
+				<p>В примере ниже все елементы <code>< p ></code> на странице будут отображаться по центру с зеленым цветом текста</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p>параграф за выбором имени*</p>
+					<span><code>p { <br> text-align: center;<br>color: green;<br>}</code></span>
+				</div>
+			</div>
+			<br><hr>
+			<div id="identificator">
+				<h3>Выбор по идентификатору "id"</h3>
+				<p>Селектор id использует атрибут id элемента HTML для выбора определенного элемента. Идентификатор элемента уникален на странице, поэтому селектор идентификаторов используется для выбора одного уникального элемента!<br>Чтобы выбрать элемент с определенным идентификатором, напишите символ решетки (#), за которым следует идентификатор элемента.</p>
+				<p>Приведенное ниже правило CSS будет применено к HTML-элементу с id="item":</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p id="item">параграф с id="item"</p>
+					<p><code>#item { <br> text-align: center; <br> color: green; <br>}</code></p>
+				</div>
+			</div>
+			<br> <hr>
+			<div id="class">
+				<h3>Выбор по классу <span lang="en">class</span></h3>
+				<p>Селектор класса выбирает элементы HTML с определенным атрибутом класса.<br><br>Чтобы выбрать элементы с определенным классом, напишите символ точки (.), а затем имя класса. (selector.class{})</p>
+				<br>
+				<p>Приведенное ниже правило CSS будет применено к HTML-элементу с class="item":</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p class="item">параграф с class="item"</p>
+					<p><code>.item {<br>text-align: center;<br>color: green;<br>}</code></p>
+				</div>
+				<br>
+				<p>Так же можно его записать в таком порядке</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>p.item { <br>text-aling: center; <br>color: green; <br>;</code></p>
+				</div>
+			</div>
+			<br><br>
+			<hr>
+			<div class="ficha">
+				<h5>У одного HTML-элемента может быть несколько классов</h5>
+				<span>Элементы HTML также могут относиться к более чем одному классу и будут наследовать сразу два стиля</span>
+				<p>Приведенное ниже правило CSS будет применено к HTML-элементу с class="textstyle styletext"</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p class="textstyle styletext"><code>< р class="item1 item2">этот параграф имеет два класса < /р ></code></p>
+					<p><code>.item1 {<br> text-align: center; <br>}<br>.item2 {<br>color: green;<br>}</code></p>
+				</div>
+			</div>
+			<hr>
+			<div class="ficha2">
+				<h5>Группировка селекторов</h5>
+				<p></p>
+				<div class="exemple">
+					<p><code>.h1 {<br>color: blue;<br>}<br>.h2 {<br>color:blue;<br>}<br>.h3 {<br>color:blue;<br>}</code></p>
+				</div>
+					<p>можно записать через запятую для того что бы минимизировать код</p>
+				<div class="exemple">
+					<p><code><span class="h1">.h1</span>, <span class="h2">.h2</span>, <span class="h3">.h3</span> {<br>color:blue;<br>}</code></p>
+				</div>
+				</div>
+			</div>
+			<br>
+			<div class="universal">
+				<h3>Универсальный селектор</h3>
+				<p>Универсальный селектор (*) выбирает все элементы HTML на странице.</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p>Приведенное ниже правило CSS повлияет на каждый элемент HTML на странице:</p>
+					<!-- будет закоментирован если что поключайте :D -->
+					<p><code> * { <br> text-align: center;<br> color: green;<br>}</code></p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="item2">
+			<h2>Селекторы-комбинаторы</h2>
+			<p>Селектор CSS может содержать более одного простого селектора. Между простыми селекторами мы можем включить комбинатор.<br><br>В CSS есть четыре разных комбинатора:</p>
+			<div class="combo1">
+				<h3>селекторы потомков (используеться пробел)</h3>
+				<p><code>В следующем примере выбираются все элементы < p > внутри элементов < div >:</code></p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code> .combo1 p {<br>text-align:right;<br> color:blue;<br>}</code></p>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<div class="combo2">
+				<h3>Дочерний селектор выбераеться с помощью ">"</h3>
+				<p>Селектор дочерних элементов выбирает все элементы, которые являются дочерними элементами указанного элемента</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>.combo2 > p {<br>color:red;<br>}</code></p>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<div class="combo3">
+				<h3>Соседние селекторы используют знак "+"</h3>
+				<p>Селектор соседних элементов используется для выбора элемента, который находится непосредственно после другого определенного элемента. <br>Родственные элементы должны иметь один и тот же родительский элемент, а «смежный» означает «непосредственно следующий»</p>
+				<div class="exemple">
+				<p>В следующем примере выбирается первый элемент < p >, расположенный сразу после элементов < div ></p>
+					<h4>пример</h4>
+					<p><code>div + p {<br> color:red;<br>}</code></p>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<div class="combo4">
+				<h3>Общие селекторы(братские/сестринские) используют знак "~"</h3>
+				<p>Общий селектор родственных элементов выбирает все элементы, которые являются следующими одноуровневыми элементами указанного элемента</p>
+				<div class="exemple">
+					<p>В следующем примере выбираются все элементы < p>, которые являются следующими одноуровневыми элементами < div></p>
+					<h4>пример</h4>
+					<p><code>.combo ~ p {<br> color:red;<br>}</code></p>
+				</div>
+			</div>
+			<br>
+			<hr>
+		</div>
+		<br>
+		<div id="item3">
+			<h2>Селекторы псевдоклассов</h2>
+			<p>Псевдокласс используется для определения особого состояния элемента</p>
+			<div class="psSelector">
+				<h3>Якорные псевдоклассы</h3>
+				<p>Могут отображаться по разному</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>a:link {<br>color:#3333;<br>}</code></p>
+					<p><code>a:visited {<br>color:#3333;<br>}</code></p>
+					<p><code>a:hover {<br>color:#3333;<br>}</code></p>
+					<p><code>a:active {<br>color:#3333;<br>}</code></p>
+				</div><br>
+				<hr>
+				<p>Еще есть один псевдокласс :first-child. Псевдокласс :first-child соответствует указанному элементу, который является первым дочерним элементом другого элемента</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>p:first-child {<br>color:red;<br>}</code></p>
+				</div>
+				<br>
+			</div>
+		</div>
+		<br>
+		<div id="item4">
+			<h2>Селекторы псевдо элементов</h2>
+			<p>Псевдоэлемент CSS используется для стилизации определенных частей элемента</p>
+			<div class="psevdoelements">
+				<h3>Первый псевдо элемент ::first-line</h3>
+				<p>Псевдоэлемент ::first-line используется для добавления особого стиля к первой строке текста</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>p::first-line {<br>color:green;<br>}</code></p>
+					<p><em>Примечание . ::first-line Псевдоэлемент можно применять только к элементам блочного уровня</em></p>
+				</div>
+			</div>
+			<hr>
+			<div class="psevdoelements">
+				<h3>Псевдоэлемент ::first-letter</h3>
+				<p>Псевдоэлемент ::first-letterиспользуется для добавления особого стиля к первой букве текста</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>p::first-letter {<br> color: green;<br>}</code></p>
+					<p><em>Примечание . ::first-letter Псевдоэлемент можно применять только к элементам блочного уровня</em></p>
+				</div>
+			</div>
+			<hr>
+			<div class="psevdoelements">
+				<h3>Псевдоэлемент ::before</h3>
+				<p>Псевдоэлемент ::beforeможно использовать для вставки содержимого перед содержимым элемента</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>p::before {<br> content: "";<br>}</code></p>
+				</div>
+			</div>
+			<hr>
+			<div class="psevdoelements">
+				<h3>псевдоэлемент ::after</h3>
+				<p>Псевдоэлемент ::afterможно использовать для вставки содержимого после содержимого элемента</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>p::after {<br> content:"";<br>}</code></p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="item5">
+			<h2>Стиль HTML-элементов с определенными атрибутами</h2>
+			<p>Можно стилизовать элементы HTML, которые имеют определенные атрибуты или значения атрибутов.</p>
+			<hr>
+			<div class="attr">
+				<h3>CSS [атрибут] селектор</h3>
+				<p>Селектор [attribute]используется для выбора элементов с указанным атрибутом</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>a[attribute] {<br>color: red;<br>}</code></p>
+				</div>
+			</div>
+			<hr>
+			<div class="attr">
+				<h3>CSS-селектор [attribute="velue"]</h3>
+				<p>Cелектор [attribute="value"]используется для выбора элементов с указанным атрибутом и значением</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>p[attribute="velue"] {<br>color: red;<br>}</code></p>
+				</div>
+			</div>
+			<hr>
+			<div class="attr">
+				<h3>CSS [attribute~="velue"] селектор</h3>
+				<p>Селектор [attribute~="value"]используется для выбора элементов со значением атрибута, содержащим указанное слово</p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>[title~="flower"] {<br> border: 5px solid black;<br>}</code></p>
+				</div>
+			</div>
+			<hr>
+			<div class="attr">
+				<h3>CSS [attribute|="velue"] селектор</h3>
+				<p>Селектор [attribute|="value"]используется для выбора элементов с указанным атрибутом, значение которого может быть точно указанным значением или указанным значением, за которым следует дефис (-). <br><em>Примечание . Значение должно быть целым словом, либо отдельно, например, class="top", либо с последующим дефисом (-), например class="top-text"</em></p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>[class|="top"] {<br>background: red;<br>}</code></p>
+				</div>
+			</div>
+			<hr>
+			<div class="attr">
+				<h3>CSS [attribute^="velue"] селектор</h3>
+				<p>Селектор [attribute^="value"]используется для выбора элементов с указанным атрибутом, значение которого начинается с указанного значения. <br>В следующем примере выбираются все элементы со значением атрибута класса, начинающимся с «top»: <br><em>Примечание . Значение не обязательно должно быть целым словом!</em></p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>[class^="value"] {<br>background: red;<br>}</code></p>
+				</div>
+			</div>
+			<hr>
+			<div class="attr">
+				<h3>CSS-селектор [attribute$="value"]</h3>
+				<p>Селектор [attribute$="value"]используется для выбора элементов, значение атрибута которых заканчивается указанным значением. <br>В следующем примере выбираются все элементы со значением атрибута класса, оканчивающимся на «тест»: <br><em>Примечание . Значение не обязательно должно быть целым словом!</em></p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>[class$="value"] {<br>background: red;<br>}</code></p>
+				</div>
+			</div>
+			<hr>
+			<div class="attr">
+				<h3>CSS-селектор [attribute*="value"]</h3>
+				<p>Селектор [attribute*="value"]используется для выбора элементов, значение атрибута которых содержит указанное значением. <br>В следующем примере выбираются все элементы со значением атрибута класса, содержащим "te": <br><em>Примечание . Значение не обязательно должно быть целым словом</em></p>
+				<div class="exemple">
+					<h4>пример</h4>
+					<p><code>[class*="value"] {<br>background:color;<br>}</code></p>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

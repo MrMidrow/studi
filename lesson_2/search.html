@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<main>
+		<h1>Serch from AutoMarket.com</h1>
+		<form action="https://fom.in.ua/echo">
+			<div>
+				<p>Вид кузова:</p>
+				<select name="typeBady" id="typeBady">
+					<option value="#" selected>...</option>
+					<option value="sedan">Седан</option>
+					<option value="Hatchback">Хэтчбек</option>
+					<option value="Cupe">купе</option>
+					<option value="Pickup">Пикап</option>
+					<option value="Roadster">Родстер</option>
+					<option value="Van">Фургон</option>
+				</select>
+			</div>
+
+			<div>
+				<p>Maрка авто:</p>
+				<select name="Mark">
+					<option value="#" selected>...</option>
+					<option value="BMW">BMW</option>
+					<option value="Audi">Audi</option>
+					<option value="Mercedes-Benz">Mercedes</option>
+				</select>
+			</div>
+
+			<div>
+				<p>Страна производитель:</p>
+				<select name="stats">
+					<option value="#" selected>...</option>
+					<option value="UK">UK</option>
+					<option value="USA">USA</option>
+					<option value="China">China</option>
+				</select>
+			</div>
+
+			<div>
+				<p>Цена:</p>
+				<label for="price_from_">от</label>
+				<input type="text" name="price_from_">
+				<label for="_to">до</label>
+				<input type="text" name="_to">
+			</div>
+
+			<div>
+				<p>Год выпуска:</p>
+				<select>
+					<option value="#" selected>...</option>
+					<option velue="2020">2020</option>
+					<option value="2019">2019</option>
+					<option value="2018">2018</option>
+				</select>
+			</div>
+
+			<div>
+				<p>Состояние:</p>
+				<label for="credit">Кредит</label>
+				<input type="checkbox" name="credit" value="Credit">
+				<label for="broken">Битая</label>
+				<input type="checkbox" name="broken" value="broken">
+				<label for="notCleared">Нерастоможена</label>
+				<input type="checkbox" name="notCleared" value="not_cleared">
+			</div>
+
+			<div>
+				<p>Вид топлива:</p>
+				<select name="type_fuel" id="fuel">
+					<option value="#" selected>...</option>
+					<option value="benz">Бензин</option>
+					<option value="dizel">Дизель</option>
+					<option value="gaz">Газ</option>
+					<option value="gaz_benz">газ\бензин</option>
+				</select>
+			</div>
+			<div>
+				<p>Тип ПК</p>
+				<select name="typetrans" id="transmission">
+					<option value="#" selected>...</option>
+					<option value="Automatic">АКП</option>
+					<option value="manual_transm">МКП</option>
+					<option value="hybrid">Гибрид</option>
+				</select>
+			</div>
+			<div>
+				<label for="color">Цвет:</label>
+				<input type="color" name="color">
+			</div>
+			<div>
+				<p>Комфор:</p>
+				<select name="comfort" id="comfort">
+					<option value="#" selected>...</option>
+					<option value="Luke">Люк</option>
+					<option value="leater_interior">Кожаный салон</option>
+					<option value="air_conditioning">Кондицинер</option>
+				</select>
+			</div>
+			<br>
+			<br>
+			<button type="submit">Поиск</button>
+		</form>
+	</main>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/**{
+	margin: 5px;
+	padding: 0px;
+}
+h1{
+	text-align: center;
+	font-size: 15px;
+	color: green;
+}
+
+#id{
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+
+.class{
+	width: 200px;
+	height: 100px;
+	border: 1px solid black;
+}
+
+.class1{
+	text-align: center;
+	overflow: hidden;
+	color: red;
+}
+
+p:first-child{
+	color: blue;
+	text-align: center;
+}
+
+a[type="button"]{
+	text-decoration: none;
+}
+
+a:hover{
+	color: black;
+}
+
+.class em{
+	font-size: 15px;
+	font-family: Arial;
+}*/
+p:first-child{
+	color: grey;
+}
+p:before{
+	content: "before_";
+}
+p:after{
+	content: "_after";
+}
+p{
+	color: red;
+}
+.class{
+	color: green;
+}
+#id{
+	color: blue;
+}
+.class1{
+	color: yellow;
+}
+p[lang="en"]{
+	color: yellowgreen;
+}
+a:hover{
+	color: black;
+}
