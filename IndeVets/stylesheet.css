@@ -6,11 +6,10 @@
 /*Общие настройки стилей*/
 
 *{
-	margin: 0;
+	margin: 0px auto;
 	padding: 0;
 	max-width: 1440px;
 	box-sizing: border-box;
-	margin: 0px auto;
 }
 
 body{
@@ -378,20 +377,24 @@ footer{
 	max-width: 1440px;
 	background: #ffffff;
 	display: flex;
+	justify-content: center;
+	padding: 100px 0px 0px 0px;
 }
 
 footer a{
 	color: #60C1BD;
 }
 
-.container{
-	margin: 0px;
-}
 
 .first_block {
 	display: flex;
 	margin: 0px;
 	flex-direction: column;
+}
+
+.first__box{
+	margin: 0px;
+	display: flex;
 }
 
 .first_block a{
@@ -401,17 +404,8 @@ footer a{
 	line-height: 19px;
 }
 
-.first__box{
-	margin: 0px;
-}
-
 .first__box > ul{
 	display: inline-block;
-	margin: 90px 69px 80px 69px;
-}
-
-.first__box > ul:first-child{
-	margin-left: 160px;
 }
 
 .first__box > ul li {
@@ -428,21 +422,16 @@ footer a{
 	text-transform: uppercase;
 }
 
-.second__box > ul {
-	padding-left: 160px;
+.second__box{
+	padding-left: 70px;
 }
-
 .second__box ul > li{
-	padding: 0px 50px 40px 0px;
+	padding: 30px 30px 20px 0px;
 	display: inline-block;
 }
 
-.second__box ul > li:last-child{
-	padding-right: 0px;
-}
 
 .second__box > p{
-	padding: 0px 0px 40px 160px;
 	color: #284854;
 	font-style: normal;
 	font-weight: 400;
@@ -450,15 +439,14 @@ footer a{
 	line-height: 18px;
 }
 
-.second_container{
+.second_block{
 	display: flex;
 	margin: 0px;
 	flex-direction: row;
-	padding: 90px 0px 0px 0px;
 }
 
 .find{
-	padding: 0px 0px 0px 97px;
+	padding: 0px 90px;
 }
 
 .find > p{
