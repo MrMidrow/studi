@@ -1,0 +1,111 @@
+body{
+  height: 100vh;
+}
+section{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(50, 50, 100, 1);
+  opacity: .7;
+  form{
+    display: flex;
+    flex-direction: column;
+    background: rgba(245, 245, 250, 1);
+    box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
+    border-radius: 12px;
+    padding: 30px;
+    .row{
+      display: flex;
+      margin-bottom: 20px;
+      h1{
+        display: inline-block;
+      }
+      #close{
+        display: inline-block;
+        margin: 0px 0px 7px 40px;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+
+        background: url(../icon/close.svg) no-repeat center;
+        &:hover{
+          border-radius: 8px;
+          background-color: #E6E6F0;
+        }
+      }
+    }
+    input{
+      border: 1px solid transparent;
+      display: block;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px 0px;
+      box-sizing: border-box;
+      opacity: 0.5;
+      outline: 0;
+      &:focus{
+        border-color:rgba(36, 163, 255, 1);
+        opacity: 1;
+      }
+      &:focus-visible{
+        border-color: rgba(36, 163, 255, 1);
+        opacity: 1;
+      }
+      &:invalid{
+        border-color:rgba(255, 0, 0, 1);
+        opacity: 1;
+      }
+      &:disabled{
+        background: rgba(237, 237, 247, 1);
+        opacity: 1;
+        border: 0;
+      }
+    }
+    #comment{
+      border: 1px solid transparent;
+      border-radius: 8px;
+      height: 130px;
+      padding: 15px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      opacity: 0.5;
+      outline: 0;
+      &:focus-visible{
+        border: 1px solid rgba(36, 163, 255, 1);
+        opacity: 1;
+      }
+    }
+    p{
+      color: rgba(179, 179, 186, 1);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+    }
+    button{
+      margin-top: 30px;
+      padding: 18px 30px;
+      font-weight: 700;
+      text-align: center;
+      color: white;
+      background: rgba(36, 163, 255, 1);
+      box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+      border-radius: 12px;
+      border: 1px solid transparent;
+      &:hover{
+        background: #0085FF;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+      }
+      &:active{
+        background: #006CCF;
+        box-shadow:0px 0px 20px rgba(36, 163, 255, 0.5);
+      }
+    }
+  }
+}
+
+@import "../styles/media_popup.less" all;

@@ -1,0 +1,79 @@
+.background__container{
+  @import url(../styles/navigation.less);
+  header{
+    .container{
+      .wrapper{
+        background: none;
+        .nav{
+          .wrapper__logo{
+            .active_page{
+              position: relative;
+              &::before{
+                content: 'services';
+                position: absolute;
+                top: 0px;
+                display: inline-block;
+                font-family: 'Montserrat';
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 36px;
+                line-height: 44px;
+                color: #FFFFFF;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main{
+    padding: 60px;
+    .wrapper{
+      padding: 0px 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: white;
+      .line{
+        border-top: 2px solid grey;
+        padding-top: 30px;
+        text-align: start;
+        .body{
+          display: flex;
+          .left{
+            margin-left: 8px;
+          }
+          .right{
+            margin-right: 30px;
+          }
+          ul{
+            margin: 37px;
+            li{
+              position: relative;
+              max-width: 636px;
+              &::before{
+                content: '';
+                position: absolute;
+                top: 8px;
+                left: -10px;
+                display: block;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: red;
+              }
+              &:nth-child(2){
+                margin: 15px 0px 15px;
+              }
+              &:nth-child(4){
+                margin-top:15px ;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@import url(../styles/footer.less);

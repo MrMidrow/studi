@@ -1,0 +1,49 @@
+.carousel {
+  padding: 60px;
+}
+.carousel .container .tabbed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .container .tabbed .free__box input {
+  display: none;
+}
+.carousel .container .tabbed .free__box input:checked + label {
+  color: transparent;
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.carousel .container .tabbed .free__box label {
+  color: grey;
+  display: block;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: end;
+  padding: 15px 30px 15px 0px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.carousel .container .tabbed .free__box label:hover {
+  color: #F0145A;
+}
+.carousel .container .tabbed .line {
+  display: flex;
+  height: 302px;
+  border-radius: 12px;
+  border: 2px solid grey;
+  margin: 0 30px;
+}
+.carousel .container .tabbed .tabs div h2 {
+  color: white;
+}
+.carousel .container .tabbed .tabs div p {
+  color: white;
+  margin-top: 30px;
+  max-width: 861px;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+}

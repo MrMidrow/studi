@@ -1,0 +1,175 @@
+footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  background: #F5F5FA;
+  border-radius: 12px;
+  .container{
+    .news{
+      .wrapper{
+        margin: 0px 50px;
+        .row{
+          padding: 15px 0px;
+        }
+        .section__cards{
+          display: flex;
+          justify-content: space-around;
+          padding-bottom: 60px;
+          border-bottom: 2px solid #E6E6F0;
+          .card{
+            display: flex;
+            flex: 1 1;
+            flex-direction: column;
+            border-radius: 12px;
+            background: white;
+            overflow: hidden;
+            cursor: pointer;
+            &:hover{
+              box-shadow: 0 3px 3px #EDEDF7;
+            }
+            .img__card{
+              display: block;
+              height: 200px;
+            }
+            .title__card{
+              margin: 30px 30px 0px;
+            }
+            .data__card{
+              margin: 15px 30px;
+              p{
+                color: #B3B3BA;
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 15px;
+              }
+            }
+            .description{
+              margin: 0px 30px 30px;
+              padding: 15px 0px;
+              border-top: 4px solid #E6E6F0;
+              p{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+              }
+            }
+          }
+          .item1{
+            .img__card{
+              background: url('../publications/Publication-1.svg') no-repeat center;
+            }
+          }
+          .item2{
+            margin: 0px 70px;
+            .img__card{
+              background: url('../publications/Publication-2.svg') no-repeat center;
+            }
+          }
+          .item3{
+            .img__card{
+              background: url('../publications/Publication-3.svg') no-repeat center;
+            }
+          }
+        }
+      }
+    }
+    .footer{
+      .wrapper{
+        margin: 0px 50px;
+        .row__top{
+
+          padding: 25px 0px 0px;
+          display: flex;
+          justify-content: space-between;
+          .box1{
+            p, a{
+              display: inline-block;
+            }
+            p{
+              color: #323264;
+              font-weight: 400;
+              position: relative;
+              &::after{
+                content: '';
+                position: absolute;
+                display: block;
+                width: 6px;
+                height: 6px;
+                background-color: #B3B3BA;
+                border-radius: 50%;
+                top: 7px;
+                right: -11px;
+              }
+            }
+            a{
+              font-size: 12px;
+              letter-spacing: 1px;
+              margin-left: 15px;
+              text-transform: uppercase;
+            }
+          }
+          .box2{
+            p{
+              color: #B3B3BA;
+              font-weight: 400;
+              font-size: 16px;
+            }
+          }
+        }
+
+        .row__bottom{
+          margin-top: 15px;
+          ul{
+            display: flex;
+            align-items: center;
+            li{
+              padding: 5px 13px;
+              position: relative;
+              &::after{
+                content:'';
+                position: absolute;
+                display: block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: #B3B3BA;
+              }
+              &:nth-child(1){
+                padding: 5px 15px 5px 0px;
+                &::after{
+                  top: 22px;
+                  right: -5px;
+                }
+              }
+              &:nth-child(2){
+                a{
+                  color: #46466E;
+                  font-weight: 700;
+                  font-size: 16px;
+                }
+                &::after{
+                  top: 12px;
+                  right: -5px;
+                }
+              }
+              &:nth-child(3){
+                &::after{
+                  display: none;
+                }
+              }
+              &:last-child{
+                display: none;
+              }
+              .btn__facebook{
+                display: block;
+                width: 40px;
+                height: 40px;
+                background: url(../icon/Facebook-Footer.svg) no-repeat center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

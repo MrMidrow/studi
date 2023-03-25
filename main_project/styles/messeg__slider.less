@@ -1,0 +1,66 @@
+.message__sliders{
+  display: flex;
+  justify-content: center;
+  .container{
+    margin: 80px 70px;
+    .carousel{
+      // width: 1120px;
+      .tabbed{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .tabs{
+          .card{
+            display: flex;
+            background: #F5F5FA;
+            border-radius: 12px;
+            .photo__card{
+              min-width: 400px;
+              border-radius: 12px 0 0 12px;
+              background: url(../photos/Alexander_Alexandrovsky.svg) no-repeat center;
+            }
+            .description{
+              padding:30px;
+              text-align: start;
+              a{
+                text-transform: uppercase;
+              }
+              h3{
+                margin:15px 0px 30px;
+              }
+              p{
+                color: grey;
+              }
+              p:last-child{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+        .btn__slider{
+          input{
+            display: none;
+            &:checked + label{
+              opacity: 1;
+            }
+          }
+          label{
+            display: inline-block;
+            margin: 15px 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #24A3FF;
+            opacity: 0.2;
+            cursor: pointer;
+            &:hover{
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
