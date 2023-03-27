@@ -56,18 +56,19 @@ footer .container .news .wrapper .section__cards .card .description p {
   line-height: 22px;
 }
 footer .container .news .wrapper .section__cards .item1 .img__card {
-  background: url('../publications/Publication-1.svg') no-repeat center;
+  background: url(../publications/Publication-1.svg) no-repeat center;
 }
 footer .container .news .wrapper .section__cards .item2 {
   margin: 0px 70px;
 }
 footer .container .news .wrapper .section__cards .item2 .img__card {
-  background: url('../publications/Publication-2.svg') no-repeat center;
+  background: url(../publications/Publication-2.svg) no-repeat center;
 }
 footer .container .news .wrapper .section__cards .item3 .img__card {
-  background: url('../publications/Publication-3.svg') no-repeat center;
+  background: url(../publications/Publication-3.svg) no-repeat center;
 }
 footer .container .footer .wrapper {
+  width: calc(100vw - 100px);
   margin: 0px 50px;
 }
 footer .container .footer .wrapper .row__top {
@@ -145,7 +146,7 @@ footer .container .footer .wrapper .row__bottom ul li:nth-child(2)::after {
 footer .container .footer .wrapper .row__bottom ul li:nth-child(3)::after {
   display: none;
 }
-footer .container .footer .wrapper .row__bottom ul li:last-child {
+footer .container .footer .wrapper .row__bottom ul li:nth-child(4) {
   display: none;
 }
 footer .container .footer .wrapper .row__bottom ul li .btn__facebook {

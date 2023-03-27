@@ -92,6 +92,7 @@ header .container .wrapper .nav .contacts > ul > li a:hover {
 }
 header .container .wrapper .nav .wrapper__logo {
   grid-area: 1/1/3/2;
+  display: flex;
 }
 header .container .wrapper .nav .wrapper__logo .logo {
   display: inline-block;
@@ -106,13 +107,20 @@ header .container .wrapper .nav .wrapper__logo .logo > a {
   height: 60px;
 }
 header .container .wrapper .nav .wrapper__logo .slash {
+  opacity: 0;
   display: inline-block;
   width: 25px;
   height: 60px;
   background: url(../icon/slash.svg) no-repeat top;
 }
-header .container .wrapper .nav .wrapper__logo .active_page {
-  display: inline-block;
+header .container .wrapper .nav .wrapper__logo .link {
+  opacity: 0;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
 }
 header .container .wrapper .nav nav {
   display: flex;

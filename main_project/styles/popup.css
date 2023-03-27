@@ -8,7 +8,6 @@ section {
   justify-content: center;
   align-items: center;
   background: #323264;
-  opacity: 0.7;
 }
 section form {
   display: flex;
@@ -87,24 +86,8 @@ section form p {
   letter-spacing: 1px;
   margin-bottom: 5px;
 }
-section form button {
+section form .blue__button {
   margin-top: 30px;
-  padding: 18px 30px;
-  font-weight: 700;
-  text-align: center;
-  color: white;
-  background: #24a3ff;
-  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-  border-radius: 12px;
-  border: 1px solid transparent;
-}
-section form button:hover {
-  background: #0085FF;
-  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-}
-section form button:active {
-  background: #006CCF;
-  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
 }
 @media all and screen and (max-width: 655px) {
   section form {

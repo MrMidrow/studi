@@ -53,6 +53,7 @@ a{
     text-shadow: 0px 3px 4px #f0145a69;
   }
 }
+
 label{
   font-weight: 700;
 }
@@ -62,7 +63,10 @@ label{
 	line-height: 46px;
   color: transparent;
 	background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-	-webkit-background-clip: text;
+	background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -95,4 +99,73 @@ label{
     height: 11px;
     background: url(../icon/arrow.svg) no-repeat center;
   }
+}
+
+
+.blue__button{
+  position: relative;
+  padding: 18px 30px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  background: rgba(36, 163, 255, 1);
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  border: 1px solid transparent;
+  &:hover{
+    background: #0085FF;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  }
+  &:active{
+    background: #006CCF;
+    box-shadow:0px 0px 20px rgba(36, 163, 255, 0.5);
+  }
+  &:focus{
+    background: #EDEDF7;
+    color: transparent;
+    &::after{
+      position: absolute;
+      top: calc(50% - 18px);
+      right: calc(50% - 18px);
+      content: "";
+      display: block;
+      width: 26px;
+      height: 26px;
+      border: 4px solid #24A3FF;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: spin 1s ease infinite;
+    }
+  }
+}
+
+@keyframes spin{
+  form{
+    transform: rotate(0turn);
+  }to{
+    transform: rotate(1turn);
+  }
+}
+
+.background__container{
+	position: relative;
+	&::after{
+		border-radius: 0 0 12px 12px;
+		border: 5px solid #CACADB;
+		content: '';
+		display: flex;
+		left: 1.2%;
+		position: absolute;
+		right: 1.2%;
+	}
+	&::before{
+		border-radius: 0 0 12px 12px;
+		border: 5px solid #E7E7F2;
+		bottom: -20px;
+		content: '';
+		display: flex;
+		left: 2.4%;
+		position: absolute;
+		right: 2.4%;
+	}
 }

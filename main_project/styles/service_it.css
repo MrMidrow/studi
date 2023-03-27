@@ -92,6 +92,7 @@
 }
 .background__container header .container .wrapper .nav .wrapper__logo {
   grid-area: 1/1/3/2;
+  display: flex;
 }
 .background__container header .container .wrapper .nav .wrapper__logo .logo {
   display: inline-block;
@@ -111,8 +112,13 @@
   height: 60px;
   background: url(../icon/slash.svg) no-repeat top;
 }
-.background__container header .container .wrapper .nav .wrapper__logo .active_page {
-  display: inline-block;
+.background__container header .container .wrapper .nav .wrapper__logo .link {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
 }
 .background__container header .container .wrapper .nav nav {
   display: flex;
@@ -167,21 +173,6 @@
 .background__container header .container .wrapper {
   background: none;
 }
-.background__container header .container .wrapper .nav .wrapper__logo .active_page {
-  position: relative;
-}
-.background__container header .container .wrapper .nav .wrapper__logo .active_page::before {
-  content: 'services';
-  position: absolute;
-  top: 0px;
-  display: inline-block;
-  font-family: 'Montserrat';
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 36px;
-  line-height: 44px;
-  color: #FFFFFF;
-}
 .background__container .main {
   padding: 60px;
 }
@@ -192,6 +183,18 @@
   align-items: center;
   text-align: center;
   color: white;
+}
+.background__container .main .wrapper h1 {
+  margin: 28px;
+}
+.background__container .main .wrapper p {
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.background__container .main .wrapper .blue__button {
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 .background__container .main .wrapper .line {
   border-top: 2px solid grey;
@@ -213,6 +216,9 @@
 .background__container .main .wrapper .line .body ul li {
   position: relative;
   max-width: 636px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
 }
 .background__container .main .wrapper .line .body ul li::before {
   content: '';
@@ -289,16 +295,16 @@ footer .container .news .wrapper .section__cards .card .description p {
   line-height: 22px;
 }
 footer .container .news .wrapper .section__cards .item1 .img__card {
-  background: url('../publications/Publication-1.svg') no-repeat center;
+  background: url(../publications/Publication-1.svg) no-repeat center;
 }
 footer .container .news .wrapper .section__cards .item2 {
   margin: 0px 70px;
 }
 footer .container .news .wrapper .section__cards .item2 .img__card {
-  background: url('../publications/Publication-2.svg') no-repeat center;
+  background: url(../publications/Publication-2.svg) no-repeat center;
 }
 footer .container .news .wrapper .section__cards .item3 .img__card {
-  background: url('../publications/Publication-3.svg') no-repeat center;
+  background: url(../publications/Publication-3.svg) no-repeat center;
 }
 footer .container .footer .wrapper {
   margin: 0px 50px;
@@ -378,7 +384,7 @@ footer .container .footer .wrapper .row__bottom ul li:nth-child(2)::after {
 footer .container .footer .wrapper .row__bottom ul li:nth-child(3)::after {
   display: none;
 }
-footer .container .footer .wrapper .row__bottom ul li:last-child {
+footer .container .footer .wrapper .row__bottom ul li:nth-child(4) {
   display: none;
 }
 footer .container .footer .wrapper .row__bottom ul li .btn__facebook {
@@ -386,4 +392,24 @@ footer .container .footer .wrapper .row__bottom ul li .btn__facebook {
   width: 40px;
   height: 40px;
   background: url(../icon/Facebook-Footer.svg) no-repeat center;
+}
+@media screen and (max-width: 1024px) {
+  .background__container .main .wrapper {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 655px) {
+  .background__container .main .wrapper .line .body {
+    flex-direction: column;
+  }
+  .background__container .main .wrapper .line .body .left {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .background__container .main .wrapper .line .body .right {
+    margin: 30px 0px 0px 10px;
+  }
+  .background__container .main .wrapper .line .body ul {
+    margin: 0;
+  }
 }

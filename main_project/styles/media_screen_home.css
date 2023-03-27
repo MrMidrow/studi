@@ -34,6 +34,25 @@
   .background__container header .container .wrapper .nav {
     padding: 30px 60px 0px;
   }
+  .background__container header .container .wrapper .nav .contacts {
+    flex-direction: row;
+    grid-area: 1/1;
+    margin: 0;
+  }
+  .background__container header .container .wrapper .nav .wrapper__logo {
+    margin: 30px 0px;
+    grid-area: 2/1/3;
+  }
+  .background__container header .container .wrapper .nav nav {
+    flex-direction: row;
+    grid-area: 3/1;
+  }
+  .background__container header .container .wrapper .nav nav ul li:first-child {
+    margin-left: 0;
+  }
+  .background__container header .container .wrapper .middle .string {
+    margin: 212px 0px 290px;
+  }
   .background__container .carousel {
     padding: 60px 70px 0;
   }
@@ -68,6 +87,27 @@
     max-width: 440px;
     padding: 10px 30px;
   }
+  footer .container .news .wrapper .section__cards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .container .news .wrapper .section__cards .card {
+    margin: 10px 0px;
+    flex: 1 0;
+  }
+  footer .container .news .wrapper .section__cards .item1 {
+    margin: 0 15px 15px 0;
+  }
+  footer .container .news .wrapper .section__cards .item2 {
+    margin: 0 0 15px 15px;
+  }
+  footer .container .news .wrapper .section__cards .item3 {
+    flex: 0 1 100%;
+    margin: 15px 0 0 0;
+  }
+  footer .container .news .wrapper .section__cards .item3 .img__card {
+    background-size: cover;
+  }
 }
 @media screen and (max-width: 768px) {
   .background__container header {
@@ -88,9 +128,6 @@
   }
   .background__container header .container .wrapper .nav nav ul li:first-child {
     margin-left: 0;
-  }
-  .background__container header .container .wrapper .middle .string {
-    margin: 212px 0px 290px;
   }
   footer .container .news .wrapper .section__cards {
     flex-wrap: wrap;
@@ -141,7 +178,6 @@
   }
   .background__container header .container .wrapper .nav .wrapper__logo {
     margin: 15px 30px 0;
-    grid-area: 2/1/3;
   }
   .background__container header .container .wrapper .nav .wrapper__logo .logo {
     width: 100px;
@@ -149,7 +185,7 @@
   }
   .background__container header .container .wrapper .nav nav {
     flex-direction: row-reverse;
-    align-items: end;
+    align-items: center;
     grid-area: 2/2/3/3;
   }
   .background__container header .container .wrapper .nav nav .burger {
@@ -237,7 +273,13 @@
     font-size: 16px;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
+  .background__container header .container .wrapper .nav .wrapper__logo .slesh {
+    height: 20px;
+  }
+  .background__container header .container .wrapper .nav .wrapper__logo .link {
+    font-size: 20px;
+  }
   .main .message__sliders .container .carousel .tabbed .tabs .card .photo__card {
     min-width: 315px;
   }
